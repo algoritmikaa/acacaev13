@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Стоматология Dr. Магомадов | Современная стоматология</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">
+        <i class="fas fa-tooth logo-icon"></i>
+        <div class="logo-text">
+          <span class="logo-name">Dr. Магомадов</span>
+          <span class="logo-spec">Турпал-Али • Стоматология</span>
+        </div>
+      </div>
+      <div class="header-contacts">
+        <a href="tel:+89667222244" class="contact-phone">
+          <i class="fas fa-phone-alt"></i> 8 (966) 722-22-44
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero-badge">✨ Улыбка вашей мечты</span>
+          <h1 class="hero__title">Стоматология нового поколения</h1>
+          <p class="hero__desc">Профессиональная забота о вашем здоровье и эстетике. Инновационные методики, максимальный комфорт и прозрачные цены.</p>
+          <div class="hero__info">
+            <div class="hero-info-item"><i class="fas fa-map-marker-alt"></i><span>Ул. Умара Кадырова 21</span></div>
+            <div class="hero-info-item"><i class="fas fa-clock"></i><span>Ежедневно: 9:00 – 20:00</span></div>
+          </div>
+          <a href="#prices" class="btn-primary">Наши услуги <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero__image">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500&h=500&fit=crop" alt="Улыбка пациента" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="prices">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наши услуги и цены</h2>
+          <p class="section-subtitle">Доступно, прозрачно, с гарантией качества</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card"><div class="service-img"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=260&fit=crop" alt="Лечение зуба"></div><div class="service-info"><h3><i class="fas fa-stethoscope"></i> Лечение зуба</h3><p>Терапия, герметизация каналов, восстановление коронки</p><div class="price-row"><span class="price">3 000 ₽</span><span class="price-note">от</span></div></div></div>
+          <div class="service-card"><div class="service-img"><img src="data:image/jpeg;base64,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" alt="Удаление зуба"></div><div class="service-info"><h3><i class="fas fa-tooth"></i> Удаление зуба</h3><p>Атравматичное удаление любой сложности, щадящие методы</p><div class="price-row"><span class="price">4 000 ₽</span></div></div></div>
+          <div class="service-card"><div class="service-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=260&fit=crop" alt="Чистка зубов"></div><div class="service-info"><h3><i class="fas fa-spa"></i> Чистка зубов</h3><p>AirFlow, ультразвук, полировка — свежее дыхание и блеск</p><div class="price-row"><span class="price">2 500 ₽</span></div></div></div>
+          <div class="service-card"><div class="service-img"><img src="data:image/jpeg;base64,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" alt="Имплантация"></div><div class="service-info"><h3><i class="fas fa-microscope"></i> Импланты</h3><p>Установка имплантов премиум-класса, костная пластика</p><div class="price-row"><span class="price">20 000 ₽</span></div></div></div>
+          <div class="service-card"><div class="service-img"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&h=260&fit=crop" alt="Брекеты"></div><div class="service-info"><h3><i class="fas fa-smile-wink"></i> Брекеты</h3><p>Керамические, сапфировые, лигатурные и элайнеры</p><div class="price-row"><span class="price">50 000 ₽</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container promo__container">
+        <div class="promo-card">
+          <div class="promo-icon"><i class="fas fa-handshake"></i></div>
+          <div class="promo-content"><span class="promo-tag">🔥 ОГРАНИЧЕННАЯ АКЦИЯ 🔥</span><h3>Приведи друга — получи 50% скидку!</h3><p>Ваш друг тоже получает <strong>скидку 50%</strong> на первое посещение. Лечитесь вместе — экономите вместе.</p><div class="promo-code"><i class="fas fa-ticket-alt"></i> Промокод: <span>FRIEND50</span></div></div>
+          <div class="promo-image"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=200&h=200&fit=crop" alt="Акция с друзьями"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title"><i class="far fa-newspaper"></i> Новости клиники</h2><p class="section-subtitle">Актуальные события, инновации и акции</p></div>
+        <div class="news-grid">
+          <article class="news-card"><div class="news-date"><span class="day">15</span><span class="month">Мар</span></div><h3>Цифровой сканер Intraoral 3D</h3><p>Теперь слепки за 2 минуты без дискомфорта. Точность до микрона — идеальные коронки и импланты.</p><a href="#" class="read-more">Подробнее <i class="fas fa-chevron-right"></i></a></article>
+          <article class="news-card"><div class="news-date"><span class="day">28</span><span class="month">Фев</span></div><h3>Бесплатная консультация ортодонта</h3><p>Запишись на диагностику брекет-систем и элайнеров. Только в марте — скидка 15% на план лечения.</p><a href="#" class="read-more">Подробнее <i class="fas fa-chevron-right"></i></a></article>
+          <article class="news-card"><div class="news-date"><span class="day">05</span><span class="month">Апр</span></div><h3>Новая методика имплантации</h3><p>Имплантация "под ключ" за 1 день. Установка немедленной нагрузки — возвращаем улыбку сразу!</p><a href="#" class="read-more">Подробнее <i class="fas fa-chevron-right"></i></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-info" id="contacts">
+      <div class="container contact-container">
+        <div class="contact-map-card"><div class="contact-details"><i class="fas fa-location-dot contact-icon"></i><h3>Наш адрес</h3><p>Улица Умара Кадырова 21, Грозный</p><a href="https://maps.google.com/?q=Улица+Умара+Кадырова+21" target="_blank" class="map-link">Открыть карту <i class="fas fa-external-link-alt"></i></a><div class="divider"></div><i class="fas fa-phone-alt contact-icon"></i><h3>Запись и консультация</h3><a href="tel:+89667222244" class="contact-tel">8 (966) 722-22-44</a><p class="contact-note">Работаем ежедневно: с 9:00 до 20:00</p></div><div class="contact-img"><img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&h=280&fit=crop" alt="Интерьер стоматологии"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer__container"><div class="footer-info"><div class="footer-logo"><i class="fas fa-tooth"></i> Dr. Магомадов Турпал-Али</div><p>Лицензия ЛО-77-01-123456. Профессиональная стоматология с заботой о каждом пациенте.</p></div><div class="footer-social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="copyright"><p>© 2025 Стоматология Магомадова. Все права защищены.</p></div></footer>
+
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      const icon = themeToggle.querySelector('i');
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          body.classList.add('dark-theme');
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+          localStorage.setItem('theme', 'light');
+        }
+      }
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') setTheme('dark');
+      else if (savedTheme === 'light') setTheme('light');
+      else {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        prefersDark ? setTheme('dark') : setTheme('light');
+      }
+      themeToggle.addEventListener('click', () => body.classList.contains('dark-theme') ? setTheme('light') : setTheme('dark'));
+    })();
+  </script>
+</body>
+</html>
